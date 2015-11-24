@@ -50,14 +50,21 @@ var ip = process.argv[3] || process.env.DEFAULT_BACKEND_IP;
 
 if (!domain || !ip) {
     console.log();
-    console.log("usage: node index.js <domain> <ip>");
+    console.log("### Usage");
     console.log();
-    console.log("ENV:");
+    console.log("    node index.js <domain> <ip>");
+    console.log();
+    console.log("### Config");
+    console.log();
     console.log("export APP_KEY=xxxxxxxxxxxxxxxx");
     console.log("export APP_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
     console.log("export CONSUMER_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
     console.log("export CDN_SERVICE_NAME=cdn-xx.xxx.xxx.xx-xxxx");
     console.log("export DEFAULT_BACKEND_IP=xxx.xxx.xxx.xxx");
+    console.log();
+    console.log("### Authentication");
+    console.log();
+    console.log("How to create the above? See http://ovh.github.io/node-ovh/");
     console.log();
     console.log("If consumer key expires, generate one with ./credentials.js");
     console.log();
